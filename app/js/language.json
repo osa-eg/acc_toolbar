@@ -1,5 +1,5 @@
 {
-  "he-IL": {
+  "he": {
     "btn_open": "תפריט נגישות",
     "btn_close": "סגור",
     "keyboard_root": "ניווט מקלדת",
@@ -33,7 +33,7 @@
       "btn_zoom_in": "הגדלת<br>תצוגה"
     }
   },
-  "ru-RU": {
+  "ru": {
     "btn_open": "Меню доступности",
     "btn_close": "Закрыть",
     "keyboard_root": "Навигация с клавиатуры",
@@ -101,7 +101,7 @@
       "btn_zoom_in": "zoom<br>screen"
     }
   },
-  "fr_FR": {
+  "fr": {
     "btn_open": "menu d'accessibilité",
     "btn_close": "fermer",
     "keyboard_root": "navigation au clavier",
@@ -133,6 +133,74 @@
       "btn_cursor_white": "gros curseur<br>blanc",
       "btn_cursor_black": "gros curseur<br>noir",
       "btn_zoom_in": "élargir<br>l'écran"
+    }
+  },
+  "ar": {
+    "btn_open": "قائمة الوصول",
+    "btn_close": "إغلاق",
+    "keyboard_root": "تنقل لوحة المفاتيح",
+    "disable_animattions": "تعطيل الحركات",
+    "access_declaration": "بيان إمكانية الوصول",
+    "debug_contacts": "الإبلاغ عن مشكلة وصول",
+    "reset_all_settings": "إعادة ضبط الإعدادات",
+    "image_without_alt": "صورة بدون وصف",
+    "contrast_block": {
+      "header": "تباين الألوان",
+      "btn_monochrome": "عرض<br>أحادي",
+      "btn_bright": "تباين<br>سطوع",
+      "btn_invert": "عكس<br>الألوان"
+    },
+    "text_block": {
+      "header": "حجم النص",
+      "btn_font_up": "تكبير<br>النص",
+      "btn_font_down": "تصغير<br>النص",
+      "btn_font_readable": "نص<br>قابل للقراءة"
+    },
+    "content_block": {
+      "header": "تمييز المحتوى",
+      "btn_underline_links": "تسطير<br>الروابط",
+      "btn_underline_headers": "تسطير<br>العناوين",
+      "btn_images_titles": "عناوين<br>الصور"
+    },
+    "zoom_block": {
+      "header": "تكبير",
+      "btn_cursor_white": "مؤشر أبيض<br>كبير",
+      "btn_cursor_black": "مؤشر أسود<br>كبير",
+      "btn_zoom_in": "تكبير<br>الشاشة"
+    }
+  },
+  "tr": {
+    "btn_open": "erişilebilirlik menüsü",
+    "btn_close": "kapat",
+    "keyboard_root": "klavye ile gezinme",
+    "disable_animattions": "animasyonları engelle",
+    "access_declaration": "erişilebilirlik bildirisi",
+    "debug_contacts": "erişilebilirlik sorunu bildir",
+    "reset_all_settings": "ayarları sıfırla",
+    "image_without_alt": "metinsiz resim",
+    "contrast_block": {
+      "header": "renk kontrastı",
+      "btn_monochrome": "renksiz<br>görüntü",
+      "btn_bright": "parlak<br>kontrast",
+      "btn_invert": "renkleri<br>ters çevir"
+    },
+    "text_block": {
+      "header": "metin boyutu",
+      "btn_font_up": "metni<br>büyüt",
+      "btn_font_down": "metni<br>küçült",
+      "btn_font_readable": "okunabilir<br>metin"
+    },
+    "content_block": {
+      "header": "içeriği vurgula",
+      "btn_underline_links": "linkleri<br>altını çiz",
+      "btn_underline_headers": "başlıkları<br>altını çiz",
+      "btn_images_titles": "resim<br>başlıkları"
+    },
+    "zoom_block": {
+      "header": "yakınlaştır",
+      "btn_cursor_white": "beyaz büyük<br>imleç",
+      "btn_cursor_black": "siyah büyük<br>imleç",
+      "btn_zoom_in": "ekranı<br>yakınlaştır"
     }
   }
 }

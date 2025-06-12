@@ -1,6 +1,5 @@
 var gulp           = require('gulp'),
-		gutil          = require('gulp-util' ),
-		gulpSass           = require('gulp-sass'),
+		gulpSass           = require('gulp-sass')(require('sass')),
 		browserSync    = require('browser-sync'),
 		concat         = require('gulp-concat'),
 		uglify         = require('gulp-uglify'),
@@ -11,7 +10,7 @@ var gulp           = require('gulp'),
 		notify         = require("gulp-notify"),
 		fileinclude 	 = require('gulp-file-include'),
 		htmlmin 	 		 = require('gulp-htmlmin'),
-		rimraf         = require("rimraf");
+		{ rimraf }     = require("rimraf");
 
 function minifyHtml(cb) {
   gulp.src('app/htmlparts/**/*.html')
@@ -55,7 +54,7 @@ function code(cb) {
 function sass(cb) {
 	gulp.src('app/scss/**/*.scss')
 	.pipe(gulpSass({
-		outputStyle: 'expand'}).on("error", notify.onError()))
+		outputStyle: 'expanded'}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 2 versions']))
 	.pipe(cleanCSS()) // comment on debug
@@ -70,16 +69,16 @@ function files(cb) {
 		'app/minjs/common.min.js'
 		])
 		.pipe(rename('acctoolbar.min.js'))
-		.pipe(gulp.dest('acctoolbar'));
+		.pipe(gulp.dest('app/acctoolbar'));
 		gulp.src([
 			'app/cursors/**/*',
-			]).pipe(gulp.dest('acctoolbar/cursors'));
+			]).pipe(gulp.dest('app/acctoolbar/cursors'));
 		cb();
 	}, 500);
 }
 
 function remDist(cb) {
-	rimraf('acctoolbar', cb);
+	rimraf('app/acctoolbar').then(() => cb()).catch(cb);
 }
 
 function clearCache (cb) { 
